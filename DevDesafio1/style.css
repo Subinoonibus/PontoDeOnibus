@@ -1,0 +1,18 @@
+#corpo {
+    margin-left: 5%;
+}
+
+#links {
+    float: right;
+    padding-top: 8px;
+    padding-right: 15px;
+}
+
+#cabeçalho {
+    margin-left: 2%;
+    margin-top: 5px;
+}
+
+#logo {
+    margin-left: 0%;
+}

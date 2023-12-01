@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %} quemsomos {% endblock %}
+
+{% block content %}
+
+<body id="corpo" background="{{ url_for('static', filename='imgs/fundo2.png')}}" style="margin-top: 1px;">
+    <div id="interface">
+        <header id="cabeçalho">
+            <img src="{{ url_for('static', filename='imgs/logo.png')}}">
+
+            <p id="links">
+                <a href="/">Home</a> | <a href="/quemsomos">Quem Somos</a> | <a href="">Contato</a>
+            </p>
+        </header>
+
+        <div id="contato">
+            <h3>Entre em contato</h3>
+            <p> Lorem, ipsum dolor <strong>sit amet </strong>consectetur adipisicing elit.</p>
+
+            <hr>    
+
+            <form>
+                <label for="">Seu e-mail:</label> <br>
+                <input type="text"><br>
+                <label for="">Assunto:</label> <br>
+                <input type="text"><br>
+                <label for="">Descrição:</label> <br>
+                <textarea name="" id="descrição" cols="30" rows="3"></textarea> <br>
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+        <h4>Todos os direitos reservados</h4>
+    </div>
+    
+</body>
+{% endblock %}
