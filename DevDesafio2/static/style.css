@@ -1,18 +1,33 @@
-#corpo {
-    margin-left: 5%;
+img{
+    position: absolute;
 }
 
-#links {
-    float: right;
-    padding-top: 8px;
-    padding-right: 15px;
+.logo{
+    position: relative;
+    margin: auto;
+    height: 95px;
+    width: 900px;
 }
 
-#cabeçalho {
-    margin-left: 2%;
-    margin-top: 5px;
+.link{
+    position: absolute;
+    top: 35px;
+    right: 0;
 }
 
-#logo {
-    margin-left: 0%;
+.capa{
+    width: 900px;
+    height: 414px;
+    margin: auto;
 }
+
+.texto1{
+    width: 900px;
+    margin: auto;
+}
+
+.rodape{
+    margin: auto;
+    width: 15%;
+}
+

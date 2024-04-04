@@ -4,35 +4,42 @@
 
 {% block content %}
 
-<body id="corpo" background="{{ url_for('static', filename='imgs/fundo2.png')}}" style="margin-top: 1px;">
-    <div id="interface">
-        <header id="cabeçalho">
-            <img src="{{ url_for('static', filename='imgs/logo.png')}}">
+<body background="{{ url_for('static', filename='imgs/fundo2.png')}}">
 
-            <p id="links">
-                <a href="/">Home</a> | <a href="/quemsomos">Quem Somos</a> | <a href="">Contato</a>
-            </p>
-        </header>
-
-        <div id="contato">
-            <h3>Entre em contato</h3>
-            <p> Lorem, ipsum dolor <strong>sit amet </strong>consectetur adipisicing elit.</p>
-
-            <hr>    
-
-            <form>
-                <label for="">Seu e-mail:</label> <br>
-                <input type="text"><br>
-                <label for="">Assunto:</label> <br>
-                <input type="text"><br>
-                <label for="">Descrição:</label> <br>
-                <textarea name="" id="descrição" cols="30" rows="3"></textarea> <br>
-                <input type="submit" value="Enviar">
-
-            </form>
+    <!-- cabeçalho -->
+    <div class="logo">
+        <img src="{{ url_for('static', filename='imgs/logo.png')}}" alt="logo" style="margin-top: 18px;" alt="logo" style="margin-top: 18px;">
+        <div class="link">
+            <span>
+                <a href="/">Home</a> |
+            </span>
+            <span>
+                <a href="/quemsomos">Quem somos</a> |
+            </span>
+            <span>
+                <a href="">Contato</a>
+            </span>
         </div>
-        <h4>Todos os direitos reservados</h4>
     </div>
-    
+
+    <!-- texto -->
+    <div class="texto1">
+        <h2>Entre em contato</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate minus, aut illo quibusdam
+            sunt. Ipsam quo debitis explicabo officia, repellat voluptates. Consequatur architecto cumque consequuntur
+            fuga qui. Adipisci, exercitationem!
+        </p>
+        <hr>
+        <form action="">
+            <label for="fname">Seu e-mail:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Assunto:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <label for="lname">Descrição:</label><br>
+            <textarea name="message" rows="2" cols="20"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 {% endblock %}
