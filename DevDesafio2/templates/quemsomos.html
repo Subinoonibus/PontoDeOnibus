@@ -2,24 +2,10 @@
 
 {% block title %} quemsomos {% endblock %}
 
+{% block background %} background="{{ url_for('static', filename='imgs/fundo2.png')}}" {% endblock %}
+
 {% block content %}
 
-<body background="{{ url_for('static', filename='imgs/fundo2.png')}}">
-    <!-- cabeçalho -->
-    <div class="logo">
-        <img src="{{ url_for('static', filename='imgs/logo.png')}}" alt="logo" style="margin-top: 18px;">
-        <div class="link">
-            <span>
-                <a href="/">Home</a> |
-            </span>
-            <span>
-                <a href="">Quem somos</a> |
-            </span>
-            <span>
-                <a href="/contato">Contato</a>
-            </span>
-        </div>
-    </div>
     <!-- texto -->
     <div class="texto1">
         <h2>Quem somos</h2>
@@ -50,10 +36,4 @@
         </p>
     </div>
 
-    <!-- rodapé -->
-
-    <div class="rodape">
-        <h4>Todos os direitos reservados</h4>
-    </div>
-</body>
 {% endblock %}

@@ -2,23 +2,8 @@
 
 {% block title %} home {% endblock %}
 
+{% block background %} background="{{ url_for('static', filename='imgs/fundo.png')}}" {% endblock %}
 {% block content %}
-<body id="corpo" background="{{ url_for('static', filename='imgs/fundo.png')}}">
-    <!-- cabeçalho -->
-    <div class="logo">
-        <img src="{{ url_for('static', filename='imgs/logo.png')}}" alt="logo" style="margin-top: 18px;">
-        <div class="link">
-            <span>
-                <a href="">Home</a> |
-            </span>
-            <span>
-                <a href="/quemsomos">Quem somos</a> |
-            </span>
-            <span>
-                <a href="/contato">Contato</a>
-            </span>
-        </div>
-    </div>
     <!-- corpo da capa -->
     <div class="capa">
         <img src="{{ url_for('static', filename='imgs/capa.png')}}" alt="capa" style="height: 414px; margin-top: 1px;">
@@ -42,9 +27,4 @@
             laboriosam totam? Minima, quam!
         </p>
     </div>
-    <!-- rodapé -->
-    <div class="rodape">
-        <h4>Todos os direitos reservados</h4>
-    </div>
-</body>
 {% endblock %}

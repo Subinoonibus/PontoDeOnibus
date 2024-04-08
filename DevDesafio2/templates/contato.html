@@ -2,26 +2,9 @@
 
 {% block title %} quemsomos {% endblock %}
 
+{% block background %} background="{{ url_for('static', filename='imgs/fundo2.png')}}" {% endblock %}
+
 {% block content %}
-
-<body background="{{ url_for('static', filename='imgs/fundo2.png')}}">
-
-    <!-- cabeçalho -->
-    <div class="logo">
-        <img src="{{ url_for('static', filename='imgs/logo.png')}}" alt="logo" style="margin-top: 18px;" alt="logo" style="margin-top: 18px;">
-        <div class="link">
-            <span>
-                <a href="/">Home</a> |
-            </span>
-            <span>
-                <a href="/quemsomos">Quem somos</a> |
-            </span>
-            <span>
-                <a href="">Contato</a>
-            </span>
-        </div>
-    </div>
-
     <!-- texto -->
     <div class="texto1">
         <h2>Entre em contato</h2>
@@ -41,5 +24,4 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-</body>
 {% endblock %}

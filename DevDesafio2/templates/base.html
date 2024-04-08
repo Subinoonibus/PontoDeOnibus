@@ -5,11 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>{% block title %}base{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
-{% block tittle %} {% endblock %}
-{% block content %}
 
+<body {% block background %}{% endblock %}>
+    <!-- cabeçalho -->
+    <div class="logo">
+        <img src="{{ url_for('static', filename='imgs/logo.png')}}" alt="logo" style="margin-top: 18px;">
+        <div class="link">
+            <span>
+                <a href="/">Home</a> |
+            </span>
+            <span>
+                <a href="/quemsomos">Quem somos</a> |
+            </span>
+            <span>
+                <a href="/contato">Contato</a>
+            </span>
+        </div>
+    </div>
+{% block content%}
 {% endblock %}
+<div class="rodape">
+    <h4>Todos os direitos reservados</h4>
+</div>
+</body>
+
 </html>
