@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}World{% endblock %}
+
+{% block link %}
+<li class="nav-item">
+  <a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link disabled" aria-disabled="true">World</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+</li>
+{% endblock %}
+
+{% block content %}
+<div class="mundos">
+  <div class="card" style="width: 18rem;">
+    <img src="{{ url_for('static', filename='imgs/isle1.jpg')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Isle of Dawn</h5>
+      <p class="card-text">Isle of Dawn, often shortened to Isle, is a cool-toned desolate desert with scattered traces
+        of civilization. It is the first Realm the player can enter, serving as the tutorial of Sky.</p>
+      <a href="#" class="btn btn-primary">More</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
