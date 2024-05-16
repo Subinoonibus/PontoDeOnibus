@@ -5,9 +5,19 @@
 } 
 
 .mundos{
-    height: auto;
-    width: auto;
     align-self: center;
+    margin: 5% 25%;
+    border: 2px solid;
+    width: 50%;
+}
+
+.intro{
+    border: 2px solid gray;
+    background-color: gray;
+    width: auto;
+    height: auto;
+    align-self: center;
+    border-radius: 5px;
     margin: 5% 25%;
 }
   
