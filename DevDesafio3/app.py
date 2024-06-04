@@ -12,3 +12,7 @@ def contato():
 @app.route('/quemsomos')
 def quemsomos():
     return render_template('quemsomos.html')
+
+@app.route('/form')
+def form():
+    return render_template('Formulario.html')
