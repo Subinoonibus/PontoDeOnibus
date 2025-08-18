@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt test</title>
+</head>
+<body>
+    <script>
+        let nome=prompt("Digite o seu nome: ");
+        let altura=Number(prompt("Digite sua altura: "))
+        let peso=Number(prompt("Digite seu peso: "))
+        nalt=altura/100
+        imc=peso/(nalt*nalt)
+        let resultado = imc < 16 ? "Baixo peso muito grave" :
+                imc >= 16 && imc <= 16.99 ? "Baixo peso grave" :
+                imc >= 17 && imc <= 18.49 ? "Baixo peso" :
+                imc >= 18.50 && imc <= 24.99 ? "Peso normal":
+                imc >= 25 && imc <= 29.99 ? "Sobrepeso":
+                imc >= 30 && imc <= 34.99 ? "Obesidade grau I":
+                imc >= 35 && imc <= 39.99 ? "Obesidade grau II":
+                imc >= 40 ? "Obesidade grau III";
+        alert("")
+        
+        
+        
+    </script>
+</body>
+</html>
